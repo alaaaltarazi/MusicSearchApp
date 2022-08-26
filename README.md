@@ -1,6 +1,6 @@
 # music_search_app
 
-A new Flutter project.
+Music search app using last.fm’s API.
 
 ## Getting Started
 
