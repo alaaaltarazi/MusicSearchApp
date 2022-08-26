@@ -13,11 +13,8 @@ class SongController extends ControllerMVC {
   List<Album> albums = <Album>[];
   String? searchType = "album";
   String searchWord = "";
-  bool hasMore = true;
   int pageNumber = 1;
-  bool error = false;
-  bool loading = true;
-  final int nextPageThreshold = 5;
+
   final PagingController<int, dynamic> pagingController =
       PagingController(firstPageKey: 1);
 
@@ -41,9 +38,6 @@ class SongController extends ControllerMVC {
       setState(() => albums.add(_album));
     }, onError: (a) {
       print(a);
-      setState(() {
-        error = true;
-      });
     }, onDone: () {
       setState(() {
         final isLastPage = albums.length < 10;
@@ -64,9 +58,7 @@ class SongController extends ControllerMVC {
     stream.listen((Artist _artist) {
       artists.add(_artist);
     }, onError: (a) {
-      setState(() {
-        error = true;
-      });
+      print(a);
     }, onDone: () {
       setState(() {
         final isLastPage = artists.length < 10;
