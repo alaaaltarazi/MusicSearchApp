@@ -1,0 +1,5 @@
+{
+  "api_base_url": "http://ws.audioscrobbler.com/",
+  "api_base_path": "2.0",
+  "api_key": "a5cfeec21fb4d68ce4c9928163ed33c1"
+}
