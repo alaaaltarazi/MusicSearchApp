@@ -1,4 +1,0 @@
-#Fri Aug 26 17:02:13 TRT 2022
-base.0=D\:\\MusicSearchApp\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
-renamed.0=classes.dex
-path.0=classes.dex
